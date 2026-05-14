@@ -1,6 +1,9 @@
 package br.com.senai.cursosBackend.curso;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.Valid;
+
+import java.util.Optional;
 
 public record DadosDetalhesCurso(
         @Schema(name = "id", description = "ID do curso", example = "1")
@@ -10,4 +13,9 @@ public record DadosDetalhesCurso(
         @Schema(name = "periodo", description = "Periodo do curso", example = "Integral")
         Periodo periodo
 ) {
+        public DadosDetalhesCurso(Curso curso) {
+                this(curso.getId(), curso.getNome(),curso.getPeriodo());
+        }
+
+
 }

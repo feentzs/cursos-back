@@ -1,0 +1,2 @@
+ALTER TABLE curso
+DROP INDEX nome;

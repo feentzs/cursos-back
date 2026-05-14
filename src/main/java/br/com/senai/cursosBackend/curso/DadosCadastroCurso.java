@@ -12,6 +12,7 @@ public record DadosCadastroCurso(
         @NotBlank
         @Size(min = 3, message = "Deve ter no mínimo 3 letras")
         String nome,
+
         @NotNull
         @Schema(name = "periodo", description = "Periodo do curso", example = "Noturno")
         Periodo periodo

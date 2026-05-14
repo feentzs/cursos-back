@@ -14,5 +14,5 @@ public interface CursoRepository extends JpaRepository<Curso, Long> {
 
     Optional<Curso> findByIdAndAtivoTrue(Long id);
 
-    boolean existsByNomeAndAtivoTrue(String nome);
+    boolean existsByNomeAndPeriodoAndAtivoTrue(String nome, Periodo periodo);
 }

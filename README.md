@@ -1,4 +1,4 @@
-"""# API de Gerenciamento de Cursos
+## API de Gerenciamento de Cursos
 
 API RESTful simplificada para o controlo de cursos, desenvolvida com **Spring Boot**, apresentando suporte para exclusão lógica e documentação automática.
 
